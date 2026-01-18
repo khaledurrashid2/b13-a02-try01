@@ -1,7 +1,183 @@
 /* CSS file for Batch 13, Assignment 02 by M Khaledur Rashid */
 
 * {
+    /* reset all the default margin & padding and add Google Font */
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    background-color: #1a0b2e;
+    /* background-color: aquamarine; */
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: white;
+}
+
+/* ==================Shared Styles====================== */
+.btn-main {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    
+    /* button linear background as per figma design */
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+}
+
+section {
+    margin: 100px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* -----------end of 'Shared Styles' part----------- */
+
+
+.nav-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+/* Section - 'featured-episodes' */
+.featured-episodes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: cen;
+}
+
+.podcast-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.podcast-cards .each-podcast-card {
+    background-color: #250D44;
+    border-radius: 30px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.podcast-cards .each-podcast-card .card-image img {
+    width: 100%;
+    display: block;
+    border-radius: 30px 30px 0 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.podcast-cards .each-podcast-card .card-text-contents {
+    background: transparent;
+    padding: 24px;
+    color: white;
+}
+
+.card-text-contents > * {
+    margin-bottom: 12px;
+}
+
+.podcast-cards .each-podcast-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #250D44;
+}
+
+.podcast-cards .each-podcast-card .card-description {
+    font-size: 1rem;
+    background-color: #250D44;
+    /* font-weight: 400;   */
+}
+
+.podcast-cards .each-podcast-card .card-clock {
+    color: #00FF88;
+    background-color: #250D44;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.podcast-cards .each-podcast-card .card-clock i {
+    color: #00FF88;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.podcast-cards .each-podcast-card .clickable-image {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.podcast-cards .each-podcast-card .clickable-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Footer Section */
+
+footer {
+    background-image: url("./assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo-part img {
+    max-height: 60px;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 32px 0;
+}
+
+footer .social-icons p {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.25rem;
+    color: white;
+    margin: 0;
+
+}
+
+footer .footer-copyright {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin: 0;
 }

@@ -1,0 +1,37 @@
+<div class="nav-logo">
+  Tech
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 60"
+    style="height: 3rem; vertical-align: middle;"
+    aria-label="Wave"
+  >
+    <defs>
+      <linearGradient
+        id="waveGradient"
+        gradientUnits="userSpaceOnUse"
+        x1="0"
+        y1="0"
+        x2="200"
+        y2="60"
+        gradientTransform="rotate(47.64)"
+      >
+        <stop offset="16.531%" stop-color="rgba(247,233,63,1)" />
+        <stop offset="49.819%" stop-color="rgba(251,9,180,1)" />
+        <stop offset="81.648%" stop-color="rgba(145,0,248,1)" />
+      </linearGradient>
+    </defs>
+
+    <text
+      x="0"
+      y="45"
+      fill="url(#waveGradient)"
+      font-family="Inter, sans-serif"
+      font-size="3rem"
+      font-weight="600"
+    >
+      Wave
+    </text>
+  </svg>
+</div>
+
