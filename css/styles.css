@@ -26,6 +26,12 @@
     
     /* button linear background as per figma design */
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+
+    transition: transform 0.3s ease;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
 }
 
 .btn-regular {
@@ -35,6 +41,11 @@
     border: 1px solid #00FF88;
     border-radius: 25px;
     padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.btn-regular:hover {
+    transform: scale(1.05);
 }
 
 .btn-small {
@@ -45,6 +56,11 @@
     border: 1px solid #00FF88;
     border-radius: 15px;
     padding: 5px 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-small:hover {
+    transform: scale(1.15);
 }
 
 section {
@@ -54,7 +70,6 @@ section {
 .section-title {
     margin-bottom: 40px;
     text-align: center;
-    background: transparent;
 }
 .section-title h2 {
     font-size: 3rem;
@@ -423,6 +438,11 @@ nav a {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.host-image img:hover {
+    transform: scale(1.05);
 }
 
 .text-and-icons {
