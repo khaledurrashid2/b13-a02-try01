@@ -54,6 +54,7 @@ section {
 .section-title {
     margin-bottom: 40px;
     text-align: center;
+    background: transparent;
 }
 .section-title h2 {
     font-size: 3rem;
@@ -399,6 +400,74 @@ nav a {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Meet the host section */
+.meet-the-host {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+    background-color: #1a0b2e;
+}
+
+.image-and-text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px 40px;
+    border-radius: 25px;
+    background-color: #1a0b2d;
+}
+
+.host-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-and-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-and-icons .text-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+
+.text-and-icons .text-details { 
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+} 
+
+.host-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 40px;              
+    height: 40px;
+    border: 1px solid rgb(221, 56, 194);  
+    border-radius: 50%;       
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 20px;              
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50%;      
+}
+
 
 
 
